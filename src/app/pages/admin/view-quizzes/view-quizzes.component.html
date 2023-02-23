@@ -1,6 +1,5 @@
-<!-- <p>view-quizzes works!</p> -->
 
-<mat-card class="mt10" *ngFor="let q of quizzes">
+<mat-card class="mt10" *ngFor="let q of quizzes" >
     <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>{{q.title}}</mat-card-title>
@@ -17,6 +16,11 @@
     </mat-card-actions>
 </mat-card>
 
-<div class="container text-center mt10">
+<div class="container text-center mt10" style="margin-bottom: 294px;">
     <button routerLink="/admin/add-quiz" mat-raised-button style="background-color: #673ab7; color:white">Add New Quiz</button>
 </div>
+
+<div class="container" style="margin-bottom: 602px;">
+</div>
+
+
