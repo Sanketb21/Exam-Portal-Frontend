@@ -58,14 +58,14 @@ export class LoginComponent {
             //redirect ... NORMAL : mormal-dashboard
             if(this.login.getUserRole()=='ADMIN')
             {
-              // window.location.href = '/admin';
-              this.router.navigate(['admin']);
+              window.location.href = '/admin';
+              // this.router.navigate(['admin']);
               this.login.loginStatusSubject.next(true);
               
             }else if(this.login.getUserRole()=="NORMAL")
             {
-              // window.location.href = '/user-dashboard';
-              this.router.navigate(['user-dashboard/0']);
+               window.location.href = '/user-dashboard/0';
+              // this.router.navigate(['user-dashboard/0']);
               this.login.loginStatusSubject.next(true);
 
             }else{
@@ -86,5 +86,12 @@ export class LoginComponent {
     );
     
   }
+
+  reset(){
+    this.loginData.username = "";
+    this.loginData.password = "";
+    return;
+  }
+
 
 }

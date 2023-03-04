@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
     //  console.log(this.login.getUser());
 
       //this.user = this.login.getUser();
-      //  window.location.reload();
+      //window.location.reload();
     })
   }
 

@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row mt20">
             <div class="col-md-6 offset-md-3">
-                <mat-card class="mb20">
+                <mat-card style="margin-top: 100px;">
                 <div class="container text-center">
                     <img src="../../../assets/logo.png" alt="" class = "mt10" width="120" height="120">
                 </div>
@@ -28,8 +28,10 @@
                     </mat-card-content>
                       <div class="container text-center">
                         <button class = "mb20" mat-raised-button style="background:#009475; color: white;">Login</button>
-                        <button class = "ml20 mb20" style="background-color: #673ab7; color: white;" mat-raised-button >Reset</button>
+                        <button (click)="reset()"  class = "ml20 mb20" style="background-color: #673ab7; color: white;" mat-raised-button >Reset</button>
                       </div>
+
+
 
 
                 </form>

@@ -1,8 +1,8 @@
 <mat-toolbar style="background-color: #673ab7;" class="position">
-    <button mat-icon-button class="example-icon home-style" aria-label="Example icon-button with menu icon">
+    <!-- <button mat-icon-button class="example-icon home-style" aria-label="Example icon-button with menu icon">
       <mat-icon>menu_book</mat-icon>
-    </button>
-    <a routerLink="/" class="home-style"><span>Exam Portal</span></a>
+    </button> -->
+    <a routerLink="/" class="home-style"><span><img src="../../../assets/parikshalogo7.jpg" style="margin-top: 10px;" width="165" height="60" alt=""></span></a>
     <span class="example-spacer"></span>
 
     <a *ngIf="!isLoggedin"
@@ -18,16 +18,18 @@
       Register
     </a>
 
-    <a *ngIf="isLoggedin && user" routerLink="/admin/profile"
-    style="margin-right: 100px; margin-bottom: 10px;text-decoration: none;color:white;"
-    mat-icon-button class="example-icon favorite-icon home-style" aria-label="Example icon-button with heart icon">
-      {{user.username}} |
-    </a>
-
-
     <a (click)="logout()" *ngIf="isLoggedin" style="margin-right: 50px; margin-bottom: 10px"
     mat-icon-button class="example-icon favorite-icon home-style" aria-label="Example icon-button with heart icon">
-      Logout
+      Logout |
     </a>
+
+    <a *ngIf="isLoggedin && user" routerLink="/admin/profile"
+    style="margin-right: 120px; margin-bottom: 10px;text-decoration: none;color:white;"
+    mat-icon-button class="example-icon favorite-icon home-style" aria-label="Example icon-button with heart icon">
+      {{user.username}} 
+    </a>
+
+
+    
     
   </mat-toolbar>

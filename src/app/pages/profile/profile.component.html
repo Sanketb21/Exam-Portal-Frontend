@@ -1,7 +1,7 @@
 <!-- <p>profile works!</p> -->
 
 
-<mat-card *ngIf="user" class="mt10" style="margin-bottom: 68px;">
+<mat-card *ngIf="user" class="mt10" style="margin-bottom: 104px;">
     <h1 style = "margin-left: 20px; margin-top: 10px;">Your Profile Details</h1>
 
     <!-- {{user | json}} -->
@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-1">
                         <!-- table -->
-                        <table class="table text-center">
+                        <table class="table text-center mb20">
                             <tr>
                                 <td>Username</td>
                                 <td>{{user.username}}</td>
@@ -47,12 +47,12 @@
         </div>
     </mat-card-content>
 
-    <div class="center">
+    <!-- <div class="center">
         <mat-card-actions>
             <button mat-raised-button color="primary" style="color: white;" class="ml10 mr10">UPDATE</button>
             <button mat-raised-button style="background-color: #009475; color: white" class="ml10 mr10">SHARE</button>
             </mat-card-actions>
-    </div>
+    </div> -->
     
 
 </mat-card>
